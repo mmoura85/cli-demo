@@ -11,9 +11,17 @@ var AddCmd = cli.Command{
 	Action: addAction,
 	Flags: []cli.Flag{
 		cli.StringFlag{
-			Name:  "test, t",
-			Value: "",
-			Usage: "add a test value",
+			Name: "name, n",
+			//			Value: "",
+			Usage: "persons name",
+		},
+		{
+			Name:  "phone, ph",
+			Usage: "phone number",
+		},
+		{
+			Name:  "mob, m",
+			Usage: "mob number",
 		},
 	},
 }
